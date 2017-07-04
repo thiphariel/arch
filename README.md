@@ -1,2 +1,17 @@
-# arch
-Arch Linux personal configuration files
+# Personal Arch Linux configuration
+
+## Themes
+GTK Theme : Arc-Dark https://github.com/horst3180/arc-theme
+Icon Theme : Arc Icon https://github.com/horst3180/arc-icon-theme
+Cursors : Capitain-cursors https://github.com/keeferrourke/capitaine-cursors
+Font : Roboto
+
+## Shell
+Zsh (.zshrc provided)
+
+## Apps
+- android-studio
+- capitaines-cursors
+- discord
+- google-chrome
+- spotify
