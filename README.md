@@ -19,3 +19,4 @@ Zsh (.zshrc provided)
 - discord
 - google-chrome
 - spotify
+- gnome-shell-extension-gmail-message-tray-git
