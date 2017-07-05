@@ -13,6 +13,7 @@ To save grub config : ```sudo grub-mkconfig -o /boot/grub/grub.cfg```
 Zsh (.zshrc provided)
 
 ## Apps
+- screenfetch
 - android-studio
 - capitaines-cursors
 - discord
