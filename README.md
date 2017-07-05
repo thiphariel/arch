@@ -1,5 +1,8 @@
 # Personal Arch Linux configuration
 
+## Grub
+To save grub config : ```sudo grub-mkconfig -o /boot/grub/grub.cfg```
+
 ## Themes
 GTK Theme : Arc-Dark https://github.com/horst3180/arc-theme
 Icon Theme : Arc Icon https://github.com/horst3180/arc-icon-theme
