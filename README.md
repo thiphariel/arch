@@ -14,6 +14,7 @@ Zsh (.zshrc provided)
 
 ## Printer (Canon IP7250)
 - Install cups
+- Install drivers ```canon-pixma-ip7200-printer```
 - Run & enable CUPS service ```systemctl start org.cups.cupsd.service && systemctl enable org.cups.cupsd.service```
 - Run & enable Avahi service (for network scanning only) ```systemctl start avahi-daemon.service && systemctl enable avahi-daemon.service```
 - Add current user to ```sys``` group ```usermod -aG sys thiphariel```
