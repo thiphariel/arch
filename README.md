@@ -18,7 +18,7 @@ Zsh (.zshrc provided)
 - Run & enable CUPS service ```systemctl start org.cups.cupsd.service && systemctl enable org.cups.cupsd.service```
 - Run & enable Avahi service (for network scanning only) ```systemctl start avahi-daemon.service && systemctl enable avahi-daemon.service```
 - Add current user to ```sys``` group ```usermod -aG sys thiphariel```
-- Add printer through the web interface at http://localhost:631
+- Add printer through the web interface at http://localhost:631 ans set it as default service
 - Test print & remove ```sys``` group on the current user ! ```sudo gpasswd -d thiphariel sys```
 
 ## Apps
