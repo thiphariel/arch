@@ -29,3 +29,6 @@ Zsh (.zshrc provided)
 - google-chrome
 - spotify
 - gnome-shell-extension-gmail-message-tray-git
+
+## Hide launcher apps
+Remove / move ```.desktop``` from ```/usr/share/applications```
