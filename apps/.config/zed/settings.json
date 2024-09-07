@@ -1,0 +1,14 @@
+{
+  "telemetry": {
+    "metrics": false
+  },
+  "ui_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "system",
+    "light": "Andromeda",
+    "dark": "Rosé Pine"
+  }
+}
