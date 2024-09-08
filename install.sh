@@ -15,7 +15,7 @@ cd ..
 rm -rf paru
 
 echo "Install all dependencies"
-paru -S rust ntfs-3g vim neovim fastfetch git zed btop steam gnome-keyring reflector noto-fonts-emoji nextcloud-client github-cli stow zoxide lazygit xdg-desktop-portal-gnome unzip obs-studio python-pip direnv samba xorg-xhost timeshift wireguard-tools openresolv zellij networkmanager-openvpn nm-connection-editor scrcpy dmidecode evolution docker docker-compose bat zen-browser-avx2-bin proton-pass vesktop xivlauncher spotify vintagestory fnm zsa-keymapp-bin input-remapper-git timeshift-autosnap signal-desktop cmatrix-git virtio-win dnsmasq qemu-full libvirt virt-install virt-manager virt-viewer edk2-ovmf swtpm qemu-img guestfs-tools libosinfo tuned
+paru -S rust ntfs-3g vim neovim fastfetch git zed btop steam gnome-keyring reflector noto-fonts-emoji nextcloud-client github-cli stow zoxide lazygit xdg-desktop-portal-gnome unzip obs-studio python-pip direnv samba xorg-xhost timeshift wireguard-tools openresolv zellij networkmanager-openvpn nm-connection-editor scrcpy dmidecode evolution docker docker-compose bat zen-browser-avx2-bin proton-pass vesktop xivlauncher spotify vintagestory fnm zsa-keymapp-bin input-remapper-git timeshift-autosnap signal-desktop cmatrix-git freerdp2 virtio-win dnsmasq qemu-full libvirt virt-install virt-manager virt-viewer edk2-ovmf swtpm qemu-img guestfs-tools libosinfo tuned
 
 echo "Install bun"
 curl -fsSL https://bun.sh/install | bash
