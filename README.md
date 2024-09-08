@@ -7,12 +7,16 @@ Install minimal arch from official ISO, with git as additional package
 ## Dotfiles
 
 Run `git clone https://github.com/thiphariel/arch`\
-Run `install.sh` script\
+Run `install.sh` script
 ```bash
 git clone --depth 1 https://github.com/thiphariel/hyprdots ~/hyprdots
 cd ~/hyprdots/Scripts
 ./install.sh
 ```
+> [!CAUTION]
+> Known issue with the second nvidia GPU. The script is trying to override updated nvidia-utils with the old one.\
+> To fix it, edit the `add nvidia drivers to the list` part on the hyperdots `install.sh`
+
 Copy the `private` folder from Nextcloud\
 GNU Stow for dotfiles :
 - `stow apps` for base apps conf
