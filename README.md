@@ -21,7 +21,11 @@ GNU Stow for dotfiles :
 - `stow zsh` for zsh
 
 > [!IMPORTANT]
-> run `chmod -R 0600 $HOME/.ssh/` & `chmod 0644 $HOME/.ssh/*.pub $HOME/.ssh/config` to avoid ssh error
+> run the following :\
+> `chmod -R 0700 arch/private/.ssh`\
+> `chmod -R 0600 arch/private/.ssh/*`\
+> `chmod 0644 arch/private/.ssh/*.pub arch/private/.ssh/config`\
+> to avoid ssh error
 
 ## Extras
 
