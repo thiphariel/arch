@@ -119,6 +119,8 @@ alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also t
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 alias cat='bat'
+source ~/.personal.aliases
+source ~/.ssh.aliases
 
 # Shell integrations
 eval "$(fzf --zsh)"
