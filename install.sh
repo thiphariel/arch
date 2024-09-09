@@ -23,6 +23,7 @@ curl -fsSL https://bun.sh/install | bash
 echo "Update /etc/fstab"
 sudo sed -i 's/,compress=zstd:3/,compress=lzo/' /etc/fstab
 sudo mkdir -p /mnt/nvme /mnt/storage /mnt/ffxiv /mnt/data
+sudo chown -R $(whoami):$(whoami) /mnt/nvme /mnt/data /mnt/ffxiv /mnt/storage
 echo "# Ext4" | sudo tee -a /etc/fstab
 echo "UUID=4c34bb71-a649-454b-8b66-b57f111108b9 /mnt/nvme ext4 defaults 0 0" | sudo tee -a /etc/fstab
 echo "UUID=4a8ec68b-39b5-4a64-9dac-b3916f15f287 /mnt/ffxiv ext4 defaults 0 0" | sudo tee -a /etc/fstab
