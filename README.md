@@ -37,6 +37,16 @@ GNU Stow for dotfiles :
 # I have already no fucking idea of why I added that
 sudo systemctl enable input-remapper
 ```
+## Servers
+
+Start with `servers/install.sh` then run the corresponding script to setup specific things
+
+Caddy setup
+```bash
+sudo vim /etc/caddy/Caddyfile # and|or conf.d
+sudo caddy fmt --overwrite FILE
+sudo caddy reload --config /etc/caddy/Caddyfile
+```
 
 ## VM
 
