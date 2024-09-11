@@ -17,7 +17,7 @@ cd ~/hyprdots/Scripts
 > Known issue with the second nvidia GPU. The script is trying to override updated nvidia-utils with the old one.\
 > To fix it, edit the `add nvidia drivers to the list` part on the hyperdots `install.sh`
 
-Copy the `private` folder from Nextcloud\
+Copy the `private` folder from whatever it is stored\
 GNU Stow for dotfiles :
 - `stow apps` for base apps conf
 - `stow private` for git, ssh, aliases etc
