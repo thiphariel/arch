@@ -14,7 +14,7 @@ add_and_setup_linuxgsm_user() {
         sudo passwd "$username"
 
         echo "Installing LinuxGSM"
-        su - "$username" -c 'curl -Lo linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh'
+        su - "$username" -c "curl -Lo linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh $username"
 
         echo "Installing the game server"
         su - "$username" -c "./$username install"
