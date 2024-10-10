@@ -1,4 +1,11 @@
 {
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
   "telemetry": {
     "metrics": false
   },
@@ -9,6 +16,6 @@
   "theme": {
     "mode": "system",
     "light": "Andromeda",
-    "dark": "Rosé Pine"
+    "dark": "Catppuccin Frappé"
   }
 }

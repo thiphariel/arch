@@ -45,6 +45,7 @@ Caddy setup
 ```bash
 sudo vim /etc/caddy/Caddyfile # and|or conf.d
 sudo caddy fmt --overwrite FILE
+sudo systemctl enable --now caddy
 sudo caddy reload --config /etc/caddy/Caddyfile
 ```
 
