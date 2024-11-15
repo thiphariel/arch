@@ -102,7 +102,9 @@ alias vc='$EDITOR ~/.zshrc'
 alias zc='zeditor ~/.zshrc'
 alias sc='source ~/.zshrc'
 alias lg='lazygit'
+alias z='zeditor'
 alias v='nvim'
+alias vi='nvim'
 alias c='clear'
 alias cf='clear && fastfetch'
 alias l='eza -lh --icons=auto' # long list
@@ -120,20 +122,23 @@ alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also t
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 alias cat='bat'
-source ~/.personal.aliases
-source ~/.ssh.aliases
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+#source ~/.personal.aliases
+#source ~/.ssh.aliases
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
-
-# bun completions
-[ -s "/home/thiph/.bun/_bun" ] && source "/home/thiph/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Direnv
 eval "$(direnv hook zsh)"
